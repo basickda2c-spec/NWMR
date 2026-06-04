@@ -768,6 +768,34 @@ img { max-width: 100%; display: block; }
 .footer-legal a { color: rgba(255,255,255,0.3); transition: color 0.2s; }
 .footer-legal a:hover { color: var(--accent); }
 
+/* ─── LOGOS BAR ─── */
+.logos-bar {
+  background: #f8f8f8;
+  padding: 50px 0;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.logos-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.75;
+  transition: opacity 0.2s;
+}
+.logo-item:hover { opacity: 1; }
+.logo-item img {
+  width: 251px;
+  height: 121px;
+  object-fit: contain;
+}
+
 /* ────────────────────────────────────
    RESPONSIVE
 ──────────────────────────────────── */
@@ -1030,6 +1058,19 @@ img { max-width: 100%; display: block; }
         <img src="./6.jpeg" alt="Gallery image 6">
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ─── LOGOS BAR ─── -->
+<section class="logos-bar">
+  <div class="container">
+    <div class="logos-grid">
+      <div class="logo-item"><img src="./logos_0000_peabody.jpg" alt="Peabody"></div>
+      <div class="logo-item"><img src="./logos_0001_rospa.jpg" alt="RoSPA"></div>
+      <div class="logo-item"><img src="./logos_0002_constructionline.jpg" alt="Constructionline"></div>
+      <div class="logo-item"><img src="./logos_0003_cpd.jpg" alt="CPD Certified"></div>
+      <div class="logo-item"><img src="./logos_0004_eastwest.jpg" alt="EastWest Compass"></div>
     </div>
   </div>
 </section>
